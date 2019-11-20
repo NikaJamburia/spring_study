@@ -1,4 +1,4 @@
-package nika.tutorial.demo;
+package com.mickitotutorial.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

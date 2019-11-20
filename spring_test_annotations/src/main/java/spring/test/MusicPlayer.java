@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -16,10 +18,12 @@ public class MusicPlayer {
     private Music rock;
     private Music rap;
 
-    @Value("${musicPlayer.name}")
+    //@Value("${musicPlayer.name}")
+    @Value("Ragaca")
     private String name;
 
-    @Value("${musicPlayer.volume}")
+    //@Value("${musicPlayer.volume}")
+    @Value("70")
     private int volume;
 
     enum genre {
@@ -28,7 +32,7 @@ public class MusicPlayer {
         ROCK
     }
 
-
+    @Autowired
     public MusicPlayer( @Qualifier("rockMusic") Music rock,
                         @Qualifier("classicalMusic") Music classic,
                         @Qualifier("rapMusic") Music rap)
@@ -38,11 +42,11 @@ public class MusicPlayer {
         this.rap = rap;
     }
 
+
     public String playRandomSong(genre genre){
         Random rand = new Random();
         int randNum = rand.nextInt(3);
 
-        System.out.println(randNum);
         if(genre == genre.ROCK){
             return rock.getSongs().get(randNum);
         }
@@ -75,10 +79,12 @@ public class MusicPlayer {
         return "Name: " + name + ", Volume: " + volume;
     }
 
+    @PostConstruct
     private void initPlayer(){
-        System.out.println("Initializing player");
+        System.out.println("Initializing player \n---------------");
     }
+    @PreDestroy
     private void destroyPlayer(){
-        System.out.println("Destroying player");
+        System.out.println("---------------\nDestroying player");
     }
 }

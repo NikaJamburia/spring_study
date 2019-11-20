@@ -24,7 +24,8 @@ public class  DemoApplication {
 
 		System.out.println();
 		BinarySearch search = context.getBean("binarySearch", BinarySearch.class);           //new BinarySearch(new BubbleSort());
-		search.search();
+		int[] arr = new int[] {1, 2, 3};
+		search.search(arr, 2);
 		System.out.println("Task: " + search.getTask());
 
 //		PersonDAO persondao = context.getBean("personDAO", PersonDAO.class);

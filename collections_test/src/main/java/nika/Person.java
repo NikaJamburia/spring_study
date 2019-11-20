@@ -1,12 +1,23 @@
 package nika;
 
+import java.util.Map;
+
 public class Person {
     private int age;
     private String name;
+    private Map<String, Float> accounts;
 
     public Person(int age, String name) {
         this.age = age;
         this.name = name;
+    }
+
+    public void setAccounts(Map<String, Float> accounts) {
+        this.accounts = accounts;
+    }
+
+    public Map<String, Float> getAccounts() {
+        return accounts;
     }
 
     public int getAge() {

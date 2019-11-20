@@ -18,4 +18,17 @@ public class SomeCDIClass {
     public void setDao(SomeCDIDAO dao) {
         this.dao = dao;
     }
+
+    public int findGreatest(){
+        int greatest = Integer.MIN_VALUE;
+        int[] data = dao.getData();
+
+        for(int i : data){
+            if(greatest < i){
+                greatest = i;
+            }
+        }
+        return greatest;
+
+    }
 }

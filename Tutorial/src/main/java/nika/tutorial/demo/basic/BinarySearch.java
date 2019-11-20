@@ -19,9 +19,10 @@ public class BinarySearch {
         this.sortAlgorithm = sortAlgorithm;
     }
 
-    public void search(){
+    public int search(int[] arr, int key){
         sortAlgorithm.sort();
         System.out.println("Doing binary search");
+        return 1;
     }
 
     @PostConstruct

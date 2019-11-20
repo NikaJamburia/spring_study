@@ -8,21 +8,54 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
+    <bean id="person1" class="nika.Person">
+        <constructor-arg value="21"/>
+        <constructor-arg value="Nika"/>
+    </bean>
+
+    <bean id="person2" class="nika.Person">
+        <constructor-arg value="13"/>
+        <constructor-arg value="Beqa"/>
+    </bean>
+
+    <bean id="person3" class="nika.Person">
+        <constructor-arg value="33"/>
+        <constructor-arg value="Gio"/>
+    </bean>
+
     <util:list id="persons" list-class="java.util.ArrayList">
-        <bean id="person1" class="nika.Person">
-            <constructor-arg value="21"/>
-            <constructor-arg value="Nika"/>
-        </bean>
-
-        <bean id="person2" class="nika.Person">
-            <constructor-arg value="13"/>
-            <constructor-arg value="Beqa"/>
-        </bean>
-
-        <bean id="person3" class="nika.Person">
-            <constructor-arg value="33"/>
-            <constructor-arg value="Gio"/>
-        </bean>
+        <ref bean="person1" />
+        <ref bean="person2" />
+        <ref bean="person3" />
     </util:list>
+
+    <bean id="user1" class="nika.Person">
+        <constructor-arg value="21"/>
+        <constructor-arg value="Nika"/>
+        <property name="accounts">
+            <map>
+                <entry key="one" value="9.67"/>
+                <entry key="two" value="5.67"/>
+                <entry key="three" value="8.67"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="comp1" class="nika.Computer">
+
+        <constructor-arg>
+            <ref bean="user1"/>
+        </constructor-arg>
+
+        <property name="proccessor" value="I7"/>
+        <property name="id" value="1"/>
+    </bean>
+
+    <util:map id="personRoles" map-class="java.util.HashMap" key-type="nika.Person" value-type="java.lang.String">
+        <entry key-ref="person1" value="admin"/>
+        <entry key-ref="person2" value="vigaca"/>
+        <entry key-ref="person3" value="ragaca"/>
+    </util:map>
 
 </beans>

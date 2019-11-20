@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9963ef96-3147-41b7-b6f2-7df93e09432f" name="Default Changelist" comment="" />
+    <list default="true" id="9942f30b-9a3a-4838-ac9c-702a09fcb43c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nika/Cols.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nika/Cols.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nika/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nika/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nika/Cols.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nika/Cols.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,15 +22,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1Thw8Wro8GVsogRGAOle6llLrkk" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1TmGPNhgDIFn7wZyg5zGZcUW8Cq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -58,17 +78,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9963ef96-3147-41b7-b6f2-7df93e09432f" name="Default Changelist" comment="" />
-      <created>1573925475379</created>
+      <changelist id="9942f30b-9a3a-4838-ac9c-702a09fcb43c" name="Default Changelist" comment="" />
+      <created>1574057832595</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573925475379</updated>
-      <workItem from="1573925476941" duration="1775000" />
-      <workItem from="1573984214572" duration="24000" />
+      <updated>1574057832595</updated>
+      <workItem from="1574057833900" duration="2406000" />
+      <workItem from="1574062666532" duration="5876000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
